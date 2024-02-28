@@ -13,8 +13,7 @@
 </head>
 
 <body>
-
-    <!--wrap-->
+ <!--wrap-->
 
     <div id="wrap">
         <!--header-->
@@ -25,14 +24,18 @@
                         <img src="./images/logo.svg" alt="logo">
                         <span class="text_hidden">넷마블컴퍼니</span>
                     </a>
+                    <a href="./index.html">
+                        <img src="./images/colorlogo.svg" alt="logo">
+                        <span class="text_hidden">넷마블컴퍼니</span>
+                    </a>
                 </h1>
 
-                <nav>
+                <nav class="h_mainmenu">
                     <ul>
                         <li><a href="#">넷마블</a></li>
                         <li><a href="#">사업소개</a></li>
                         <li><a href="#">인재채용</a></li>
-                        <li><a href="#">뉴스</a></li>
+                        <li><a href="./sub_news.html">뉴스</a></li>
                         <li><a href="#">투자정보</a></li>
                     </ul>
                 </nav>
@@ -45,43 +48,45 @@
         </header>
         <!--/header-->
 
-        <div id="submenu">
-            <div class="allmenu">
-                <ul>
-                    <li><a href="./sub_about.html">넷마블컴퍼니</a></li>
-                    <li><a href="#">정도경영</a></li>
-                    <li><a href="#">ESG</a></li>
-                    <li><a href="#">오시는길</a></li>
-                    <li><a href="#">넷마블둘러보기</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">사업영역</a></li>
-                    <li><a href="#">넷마블게임</a></li>
-                    <li><a href="#">글로벌사업</a></li>
-                </ul>
-                <ul></ul>
-                <ul></ul>
-                <ul>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">기업지배구조</a></li>
-                    <li><a href="#">재무정보</a></li>
-                    <li><a href="#">IR자료실</a></li>
-                    <li><a href="#">공시</a></li>
-                </ul>
-            </div>
+        <div id="submenu" class="h_submenu">
+            <div class="allsubmenu">
+                <div class="allmenu">
+                    <ul>
+                        <li><a href="./sub_about.html">넷마블컴퍼니</a></li>
+                        <li><a href="#">정도경영</a></li>
+                        <li><a href="#">ESG</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">넷마블둘러보기</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">사업영역</a></li>
+                        <li><a href="./sub_business.html">넷마블게임</a></li>
+                        <li><a href="#">글로벌사업</a></li>
+                    </ul>
+                    <ul></ul>
+                    <ul></ul>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">기업지배구조</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">IR자료실</a></li>
+                        <li><a href="#">공시</a></li>
+                    </ul>
+                </div>
 
-            <div class="gamebutton">
-                <a href="#">
-                    <div class="left">
-                        <figure>
-                            <img src="./images/netmarble_keke.png" alt="keke">
-                        </figure>
-                    </div>
-                    <div class="right">
-                        <p>즐거운 게임 포털</p>
-                        <p>netmarble</p>
-                    </div>
-                </a>
+                <div class="gamebutton">
+                    <a href="https://www.netmarble.net/">
+                        <div class="left">
+                            <figure>
+                                <img src="./images/netmarble_keke.png" alt="keke">
+                            </figure>
+                        </div>
+                        <div class="right">
+                            <p>즐거운 게임 포털</p>
+                            <p>netmarble</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -100,7 +105,7 @@
                 </button>
 
             </div>
-            <ul class="mainmenu">
+            <ul class="mainmenu seromainmenu">
                 <li>
                     <div class="title">
                         <a href="#">넷마블</a>
@@ -108,8 +113,8 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <ul class="submenu">
-                        <li><a href="#">넷마블컴퍼니</a></li>
+                    <ul class="submenu serosubmenu">
+                        <li><a href="./sub_about.html">넷마블컴퍼니</a></li>
                         <li><a href="#">정도경영</a></li>
                         <li><a href="#">ESG</a></li>
                         <li><a href="#">오시는길</a></li>
@@ -118,14 +123,14 @@
                 </li>
                 <li>
                     <div class="title">
-                        <a href="#">사업소개</a>
+                        <a href="./sub_business.html">사업소개</a>
                         <div class="button">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <ul class="submenu">
+                    <ul class="submenu serosubmenu">
                         <li><a href="#">사업영역</a></li>
-                        <li><a href="#">넷마블게임</a></li>
+                        <li><a href="./sub_business.html">넷마블게임</a></li>
                         <li><a href="#">글로벌사업</a></li>
                     </ul>
                 </li>
@@ -133,13 +138,13 @@
                     <div class="title">
                         <a href="#">인재채용</a>
                     </div>
-                    <ul class="submenu"></ul>
+                    <ul class="submenu serosubmenu"></ul>
                 </li>
                 <li>
                     <div class="title">
-                        <a href="#">뉴스</a>
+                        <a href="./sub_news.html">뉴스</a>
                     </div>
-                    <ul class="submenu"></ul>
+                    <ul class="submenu serosubmenu"></ul>
                 </li>
                 <li>
                     <div class="title">
@@ -148,7 +153,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                     </div>
-                    <ul class="submenu">
+                    <ul class="submenu serosubmenu">
                         <li><a href="#">Overview</a></li>
                         <li><a href="#">기업지배구조</a></li>
                         <li><a href="#">재무정보</a></li>
@@ -160,6 +165,7 @@
         </div>
     </div>
 
+    
     <main>
         <div class="content">
             <!-- bg  -->
