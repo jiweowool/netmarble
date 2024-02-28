@@ -81,13 +81,13 @@ $(function(){
         speed: 1500,
         responsive:[
             {
-                breakpoint: 1700,
+                breakpoint: 1860,
                 settings: {
                     slidesToShow: 4
                 }
             },
             {
-                breakpoint: 1350,
+                breakpoint: 1440,
                 settings: {
                     slidesToShow: 3.5
                 }
@@ -99,7 +99,7 @@ $(function(){
                 }
             },
             {
-                breakpoint: 950,
+                breakpoint: 960,
                 settings: {
                     slidesToShow: 3
                 }
@@ -156,6 +156,12 @@ $(function(){
                 breakpoint: 430,
                 settings: {
                     slidesToShow: 2.2
+                }
+            },
+            {
+                breakpoint: 390,
+                settings: {
+                    slidesToShow: 2
                 }
             },
         ]
