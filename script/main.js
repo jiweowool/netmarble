@@ -26,6 +26,8 @@ $(function(){
         }
     });
 
+    //가로메뉴
+
     $(".h_mainmenu,.h_submenu").on({
         mouseover:function(){
             $(".h_submenu").stop().slideDown();
@@ -41,7 +43,8 @@ $(function(){
                 display:'block'
             });
             $(".h_mainmenu ul li").css({
-                color:'#5C3725'
+                color:'#5C3725',
+                textAlign: 'left'
             });
         },
         mouseout:function(){
@@ -57,7 +60,8 @@ $(function(){
                 display:'block'
             });
             $(".h_mainmenu ul li").css({
-                color:'#fff'
+                color:'#fff',
+                textAlign: 'center'
             });
         }
     });
@@ -72,7 +76,6 @@ $(function(){
     $('.slide_box').slick({
         slidesToShow: 4.5,
         infinite: true,
-        // centerMode: true,
         autoplay: true,
         autoplaySpeed: 1500,
         speed: 1500,
@@ -157,5 +160,8 @@ $(function(){
             },
         ]
 });
+
+
+AOS.init();
 
 });
