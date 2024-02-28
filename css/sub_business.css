@@ -463,6 +463,9 @@ footer .content .right .iconbox .country select {
     }
 }
 @media screen and (max-width:1024px){
+    main .content {
+        background-image: url(../images/business/business_main_m.jpg);
+    }
     #gamebox .content .game .bottom .textbox .title p:first-child{
         font-size: 0.8rem;
     }
@@ -492,7 +495,6 @@ footer .content .right .iconbox .country select {
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media screen and (max-width:767px){}
 @media screen and (max-width:700px){
     #top ul li{
         font-size: 0.8rem;
@@ -508,7 +510,7 @@ footer .content .right .iconbox .country select {
 }
 @media screen and (max-width:500px){
     main .content {
-        background-image: url(../images/business/business_main_m.png);
+        background-image: url(../images/business/business_main_s.png);
     }
     #top .content h2{
         font-size: 1.5rem;

@@ -388,3 +388,17 @@ header .menubar {
     display: none;
   }
 }
+
+
+@media screen and (max-width:600px){
+  header nav ul li{
+    font-weight: 700;
+  }
+
+  #submenu .allmenu ul li{
+    font-weight: 700;
+  }
+  #submenu .allmenu ul li:hover{
+    font-weight: 700;
+  }
+}
