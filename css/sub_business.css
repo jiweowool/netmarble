@@ -507,6 +507,9 @@ footer .content .right .iconbox .country select {
     }
 }
 @media screen and (max-width:500px){
+    main .content {
+        background-image: url(../images/business/business_main_m.png);
+    }
     #top .content h2{
         font-size: 1.5rem;
     }
@@ -524,8 +527,4 @@ footer .content .right .iconbox .country select {
     }
 }
 @media screen and (max-width:400px) {
-
-    main .content {
-        background-image: url(../images/business/business_main_m.png);
-    }
 }
