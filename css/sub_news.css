@@ -368,6 +368,7 @@ td{
     height: 100%;
     padding: 0 2%;
     font-weight: 400;
+    line-height: 150%;
 }
 
 td:first-child{

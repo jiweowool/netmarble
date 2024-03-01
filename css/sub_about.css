@@ -1279,10 +1279,6 @@ footer .content .right .iconbox .country select {
 
 @media screen and (max-width:400px) {
 
-    main .content {
-        background-image: url(../images/about/about_main_s.png);
-    }
-
     main .content .textbox h2 {
         font-size: 2rem;
         margin-bottom: 60px;

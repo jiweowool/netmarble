@@ -32,6 +32,7 @@ header h1 {
   position: absolute;
   /* top: 9%; */
   left: 5%;
+  /* background-color: slateblue; */
 }
 
 header h1 .text_hidden {
@@ -74,18 +75,19 @@ header nav ul li {
   font-size: 1rem;
   text-align: center;
 } 
-
 header .menubar {
-  width: 2%;
-  height: 35%;
+  width: 50px;
+  height: 50px;
   /* background-color: #007ABE; */
-  margin-right: 50px;
+  margin-right: 3%;
+  display: flex;
   display: none;
   align-items: center;
   justify-content: center;
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+  text-align: center;
 }
 
 /* /header */
@@ -134,12 +136,12 @@ header .menubar {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 #submenu .allmenu ul li:hover {
   color: #5C3725;
-  font-weight: 900;
+  font-weight: 700;
   font-family: "Noto sans kr";
 }
 
@@ -186,6 +188,11 @@ header .menubar {
 
 /*serosubmenu*/
 
+#seromenu{
+  width: 100%;
+  font-family: "netmarble";
+}
+
 .seromenu{
   width: 100%;
   max-width: 1024px;
@@ -197,9 +204,22 @@ header .menubar {
   z-index: 999;
   display: none;
 }
+.seromenu .content{
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+  /* background-color: salmon; */
+  overflow-y: scroll;
+  scrollbar-width:none;
+  /* background-color: salmon; */
+}
+
+/*******************mainmenu*************************/
 .seromenu .mainmenu{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  /* background-color: salmon; */
+  margin-bottom: 20px;
 }
 
 .seromenu .mainmenu>li{
@@ -207,20 +227,24 @@ header .menubar {
   overflow: hidden;
   /* border: 1px solid #f00; */
 }
+
+/*******************title********************************/
 .seromenu .mainmenu>li .title{
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   padding-right: 3%;
+  /* background-color: skyblue; */
+  /* border: 1px solid #f00; */
 }
 .seromenu .mainmenu>li .title>a{
   display: block;
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.1rem;
   padding-left: 3%;
 }
@@ -236,13 +260,16 @@ header .menubar {
 .seromenu .mainmenu>li .title .button i{
   font-size: 1rem;
 }
+
+/**************세로메뉴 서브메뉴*****************************/
 .seromenu .mainmenu>li .submenu{
   width: 100%;
+  /*******hight0******/
+  height: 0;
   overflow: hidden;
   /* background-color: salmon; */
   padding-left: 6%;
-  display: none; 
-  /*세로메뉴의 서브메뉴가 가려진 곳*/
+  /* display: none;  */
 }
 
 .seromenu .mainmenu>li .submenu li{
@@ -259,6 +286,10 @@ header .menubar {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.seromenu .mainmenu>li:last-child .serosubmenu li:last-child{
+  margin-bottom: 20px;
 }
 
 .seromenu .top{
@@ -294,6 +325,7 @@ header .menubar {
   background-color: inherit;
   border: none;
   cursor: pointer;
+  /* background-color: skyblue; */
 }
 .seromenu button i{
   font-size: 2rem;
@@ -304,11 +336,14 @@ header .menubar {
   background-color: #5C3725;
   transition: .5s;
 }
+.seromenu .mainmenu>li:hover .title>a{
+  font-weight: 500;
+}
 
 .seromenu .mainmenu>li .submenu li:hover{
   color: #5C3725;
-  font-weight: 900;
-  font-family: "Noto sans kr";
+  font-weight: 500;
+  /* font-family: "Noto sans kr"; */
   font-size: 0.9rem;
   /* transition: .5s; */
   /* text-decoration: underline; */
@@ -319,6 +354,66 @@ header .menubar {
 
 
 /*/serosubmenu*/
+
+
+.bottom{
+  width: 100%;
+  border-top: 1px solid #d2d2d2;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.seromenu .bottom>.content{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  /* background-color: slateblue; */
+  padding-left: 3%;
+  margin: 0;
+}
+.bottom ul{
+  /* background-color: skyblue; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom ul li{
+  width: 50%;
+  height: 40px;
+  /* border: 1px solid #f00; */
+  display: flex;
+  align-items: center;
+  /* padding: 0 3%; */
+}
+.bottom ul li a{
+  /* background-color: salmon; */
+  margin-right: 5px;
+  font-size: 0.8rem;
+  font-family: "netmarble";
+  /* font-weight: 100; */
+  color: #d2d2d2;
+}
+
+.bottom ul li:first-child a{
+  color: #000;
+}
+
+.bottom ul li i{
+  transform: rotate(-40deg);
+}
+
+.bottom ul li a:hover{
+  font-weight: 500;
+  color: #5C3725;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1350px) {
   header h1 {
@@ -389,16 +484,38 @@ header .menubar {
   }
 }
 
-
-@media screen and (max-width:600px){
-  header nav ul li{
-    font-weight: 700;
+@media screen and (max-width:700px){
+  .seromenu .mainmenu>li .title>a{
+    height: 55px;
   }
-
-  #submenu .allmenu ul li{
-    font-weight: 700;
+  .seromenu .mainmenu>li .title>a{
+    font-size: 1rem;
   }
-  #submenu .allmenu ul li:hover{
-    font-weight: 700;
+}
+
+@media screen and (max-width:300px){
+  .seromenu .mainmenu>li .title>a{
+    height: 50px;
+  }
+  .seromenu .mainmenu>li .title>a,
+  .seromenu .mainmenu>li .title .button i{
+    font-size: 0.9rem;
+  }
+  .seromenu .mainmenu>li .submenu li{
+    font-size: 0.7rem;
+    height: 35px;
+  }
+  .seromenu .mainmenu>li:last-child .serosubmenu li:last-child{
+    margin-bottom: 10px;
+  }
+  
+  .bottom ul{
+    display: block;
+  }
+  .bottom ul li{
+    width: 100%;
+  }
+  .bottom ul li a{
+    font-size: 0.7rem;
   }
 }
