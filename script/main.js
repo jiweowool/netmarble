@@ -103,12 +103,12 @@ $(function(){
         }
     });
 
-    $('#slide_box').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 1500
-    });
+    // $('#slide_box').slick({
+    //     infinite: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     speed: 1500
+    // });
 
     $('.slide_box').slick({
         slidesToShow: 4.5,
