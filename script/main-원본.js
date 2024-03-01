@@ -6,6 +6,7 @@ $(function(){
     $(".menubar").click(function(){
         
         $(".seromenu").show();
+        $(".submenu").hide();
 
     });
 
@@ -16,52 +17,14 @@ $(function(){
     });
 
 
-    $(".title").click(function(){
-
-        /*
-        title 안에 있는 submenu의 height가 변경되어야한다.
-        
-        눌렀던 title에게만 적용이 되어sub메뉴가 내려와야함
-        -> this 를 사용해서 해결
-        -> this = click한 title
-
-        
-        title 안에 submenu를 지정해야한다.
-        ->submenu를 찾는 메서드를 사용한다.
-        -> 요소 선택메서드 
-           parent : 나의 부모요소를 부름
-           find , children : 나의 자식요소를 부름
-           siblings : 나의 형제관계 요소를 부름
-        
-        ->.title과 .submenu는 형제관계이므로 siblings를 사용
-
-
-        /*
-        
-        눌렀을때  height 값이 0px이 아니면 이미 sub 메뉴가 나와있는것이기 때문에
-        대입이 아닌 대입 반대적용 != 사용
-
-        this(=.title)의 / .siblings(형제관계)중에 / ("적용되어야할 class명")(.submenu)의
-        / .css의 / ("css타입")(height)값이 / != (값이 아닐때) / (적용할값)(0px) 가 조건
-        
-        
-        if(.title의 형제관계중 .submenu의 css중 height값이 0px이 아닐경우){
-            height:'0'이 되어라 (height값이 0이 아니라면 이미 submenu가 나와있는 것이기 때문, 이를 0으로 올림)
-        }else{
-            height:'auto'가 되어라 (height값이 0이라면 메뉴가나와야하기 때문에 이를 auto로 바꾼다.)
-        } 
-
-        */
-        
-        
-        if($(this).siblings(".submenu").css("height") != "0px"){
-            $(this).siblings(".submenu").css({height:'0'})
-        }else{ $(this).siblings(".submenu").css({height:'auto'})
-            
+    $(".seromainmenu>li").on({
+        mouseover:function(){
+            $(".serosubmenu",this).stop().slideDown();
+        },
+        mouseout:function(){
+            $(".serosubmenu",this).stop().slideUp();
         }
-        
     });
-
 
     //가로메뉴
 

@@ -93,30 +93,31 @@ $(function () {
         $("#ci .content .ci_content").hide();
     });
 
-    // seromenu
+  // seromenu
 
-    $(".menubar").click(function(){
+  $(".menubar").click(function(){
         
-        $(".seromenu").show();
-        $(".submenu").hide();
+    $(".seromenu").show();
 
-    });
+});
 
-    $(".seromenu .top button").click(function(){
+$(".seromenu .top button").click(function(){
+    
+    $(".seromenu").hide();
+
+});
+
+
+$(".title").click(function(){
+    
+    
+    if($(this).siblings(".submenu").css("height") != "0px"){
+        $(this).siblings(".submenu").css({height:'0'})
+    }else{ $(this).siblings(".submenu").css({height:'auto'})
         
-        $(".seromenu").hide();
-
-    });
-
-
-    $(".seromainmenu>li").on({
-        mouseover:function(){
-            $(".serosubmenu",this).stop().slideDown();
-        },
-        mouseout:function(){
-            $(".serosubmenu",this).stop().slideUp();
-        }
-    });
+    }
+    
+});
 
     //가로메뉴
 

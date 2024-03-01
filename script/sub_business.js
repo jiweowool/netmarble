@@ -1,12 +1,12 @@
 $(function(){
 
     
-    // seromenu
+     // seromenu
 
-    $(".menubar").click(function(){
+     $(".menubar").click(function(){
         
         $(".seromenu").show();
-        $(".submenu").hide();
+
 
     });
 
@@ -17,13 +17,14 @@ $(function(){
     });
 
 
-    $(".seromainmenu>li").on({
-        mouseover:function(){
-            $(".serosubmenu",this).stop().slideDown();
-        },
-        mouseout:function(){
-            $(".serosubmenu",this).stop().slideUp();
+    $(".title").click(function(){
+        
+        if($(this).siblings(".submenu").css("height") != "0px"){
+            $(this).siblings(".submenu").css({height:'0'})
+        }else{ $(this).siblings(".submenu").css({height:'auto'})
+            
         }
+        
     });
 
     //가로메뉴
