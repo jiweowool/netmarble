@@ -63,12 +63,28 @@ body {
 
 main {
   width: 100%;
+  margin-bottom: 99vh;
 }
 
-main #slide_box {
+main .bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  /* opacity: 0.15; */
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* main #slide_box {
   width: 100%;
   height: 50vw;
-  /* background-color: aqua; */
+  /* background-color: aqua; 
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -80,7 +96,7 @@ main #slide_box .slide img {
 
 main #slide_box .slide figure:nth-of-type(2) {
   display: none;
-}
+} */
 
 /* /main */
 
